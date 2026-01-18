@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cool Animated Download Arrow</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1a1a2e;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .download-arrow {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      border: 3px solid #00d4ff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: bounce 1.5s infinite ease-in-out;
+      box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    }
+
+    .download-arrow::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-top: 3px solid #00d4ff;
+      border-right: 3px solid #00d4ff;
+      transform: rotate(45deg);
+    }
+
+    .download-arrow::after {
+      content: "↓";
+      position: absolute;
+      font-size: 18px;
+      color: #00d4ff;
+      font-weight: bold;
+      opacity: 0.7;
+      animation: pulse 2s infinite alternate;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.6; transform: scale(1); }
+      100% { opacity: 1; transform: scale(1.1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="download-arrow"></div>
+</body>
+</html>   
