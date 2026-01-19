@@ -32,3 +32,34 @@ button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }   
+
+
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: #6848fc; /* 007bff*/
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.arrow-img {
+  width: 24px;
+  height: 24px;
+  margin-left: 0px;
+  margin-right: 0px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+	transform: translateY(0);
+  }
+  50% {
+	transform: translateY(-6px);
+  }
+}
