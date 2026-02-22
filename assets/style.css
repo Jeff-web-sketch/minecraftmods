@@ -36,25 +36,31 @@ button:disabled {
 
 
 .download-btn {
-  display: flex;
+  /*display: flex;
   align-items: center;
   padding: 10px 16px;
-  background-color: #6848fc; /* 007bff*/
-  color: white;
+  background-color: #6848fc;  007bff
+   color: white;
   border: none;
   border-radius: 6px;
   font-size: 16px;
-  cursor: pointer;
+  cursor: pointer;*/
+  display: inline-block; padding: 10px 20px; background-color: green;  border-radius: 30px;
+  
 }
-
+.download-btn:hover {
+	background-color: darkgreen;
+}
 .arrow-img {
   width: 24px;
   height: 24px;
   margin-left: 0px;
   margin-right: 0px;
-  animation: bounce 1s infinite;
+  
 }
-
+.arrow-image:hover {
+	animation: bounce 1s infinite;
+}
 @keyframes bounce {
   0%, 100% {
 	transform: translateY(0);
