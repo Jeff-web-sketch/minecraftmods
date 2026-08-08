@@ -7,125 +7,164 @@
 </head>
 <body>
 
+<!-- Hero Section -->
+<div class="hero glass-card">
+  <h1>📖 Waste Not Guide</h1>
+  <p>Learn how to turn useless items into valuable resources</p>
+</div>
+
 <!-- Navigation -->
-<div class="parent" style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.5); padding: 20px; color: white; width: 350px; margin-bottom: 20px;">
-  <button onclick="window.location.href='index.html'">Home</button>
-  <button onclick="window.location.href='news.html'">News</button><br><br>
-  <button onclick="window.location.href='guide.html'">Guide</button><br><br>
-  <button onclick="window.location.href='snapshots.html'">Snapshots</button>
+<div class="parent glass-card">
+  <button onclick="window.location.href='index.html'">🏠 Home</button>
+  <button onclick="window.location.href='news.html'">📰 News</button>
+  <button onclick="window.location.href='guide.html'">📖 Guide</button>
+  <button onclick="window.location.href='snapshots.html'">📸 Snapshots</button>
 </div>
 
-<!-- Recipes -->
-<VStack spacing="24px" align="stretch">
-<div style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.5); padding: 20px; color: white; width: 700px; margin-bottom: 20px; word-wrap: break-word;">
-	
-	
-	
-	<div style="display: flex; gap: 20px;">
-	<div>
-			<h1>Recipes</h1>
+<br>
+
+<!-- Recipes Section -->
+<div class="glass-card" style="width: 100%; max-width: 900px;">
+  <h1>🔧 Recipes</h1>
   <p>See <a href="snapshots.html">Snapshots</a> for recipe images</p>
-  <p>Disc fragments 2 sugar</p>
-  <p>Fungus loaf recipe</p>
-  <p>Clock 2 gold</p>
-  <p>Dead bush 2 stick</p>
-  <p>Snow cone</p>
-  <p>Coral blocks 2 cookies (multiple recipes)</p>
-  <p>Beetrootstewstuff</p>
-  <p>Kelp block 2 charcoal</p>
-  <p>Redsnowcone</p>
-  <p>Bluesnowcone</p>
-  <p>Greensnowcone</p>
-  <p>Redbluesnowcone</p>
-  <p>Rotten flesh 2 dirt</p>
-  <p>Echo shard to amethyst</p>
-  <p>Compas 2 iron</p>
-  <p>Kelp stew</p>
-  <p>Turtle shell helmet plus</p>
-  <p>Carrot on stick 2 fishing rod</p>
-  <p>Elytra</p>
-  <p>Bounceslab</p>
-  <p>Warped fungus 2 warped fungus concentrate (wfc)</p>
-  <p>Wfc 2 blurp concentrate</p>
-  <p>Blurp concentrate 2 blurp spawn egg</p>
-  <p>Mega Blurp</p>
-  <p>Eye block</p>
-  <p>Cheese block 2 wedge</p>
-  <p>Cheese wedge 2 block</p>
-  <p>Milk 2 cheese</p>
-  <p>Fish 2 fish stew</p>
-  <p>Puffer 2 fish stew</p>
-  <p>Nephrite hoe 2 netheite scrap</p>
-  <p>Poisonpotato 2 backed potato</p>
-  <p>Poison remover recipe</p>
-  <p>Rabbit armor</p>
-  <p>Minecraft with furnace 2 minecart</p>
-  <p>Javelin</p>
-  <p>Fire javelin</p>
-  <p>Furnaceminecart 2 minecart</p>
-  <p>Fern to wheat seed</p>
-  <p>Tall Fern to wheat seed</p>
-  <p>Enchanted golden apple recipe</p>
-  <p>Luck Potion Recipe</p>
-</div>
-<div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <h1>Items</h1>
-  <p>Fungus loaf</p>
-  <p>Snowcone</p>
-  <p>Beetrootstewstuff</p>
-  <p>Redsnowcone</p>
-  <p>Bluesnowcone</p>
-  <p>Greensnowcone</p>
-  <p>Redbluesnowcone</p>
-  <p>Ruined portal locator</p>
-  <p>Kelp stew</p>
-  <p>Turtle shell helmet plus</p>
-  <p>Bounceslab</p>
-  <p>Blurpconsentrate</p>
-  <p>Warpedfungusconcentrate</p>
-  <p>Cheese wedge</p>
-  <p>Fish stew</p>
-  <p>Poison remover</p>
-  <p>Rabbit armor</p>
-  <p>Javelin</p>
-  <p>Fire javelin</p>
-  <p>Magma cream armor</p>
   
-  <h1>Entities</h1>
-  <p>Blurp (give fungus and get gold nuggets)</p>
-  <p>Mega blurp (give fungus and get gold ingots)</p>
-  <p>Blurred</p>
-  <p>Superblurped</p>
-</div>   
-		
-		
-	</div>   
-
+  <div class="recipe-grid">
+    <div class="recipe-item">
+      <h3>Basic Conversions</h3>
+      <p>• Disc fragments → Sugar</p>
+      <p>• Dead bush → Sticks</p>
+      <p>• Rotten flesh → Dirt</p>
+      <p>• Fern → Wheat seeds</p>
+      <p>• Tall Fern → Wheat seeds</p>
+    </div>
+    
+    <div class="recipe-item">
+      <h3>Food Recipes</h3>
+      <p>• Fungus loaf</p>
+      <p>• Snow cone variants</p>
+      <p>• Beetroot stew stuff</p>
+      <p>• Kelp stew</p>
+      <p>• Fish stew</p>
+    </div>
+    
+    <div class="recipe-item">
+      <h3>Equipment</h3>
+      <p>• Clock → Gold</p>
+      <p>• Compass → Iron</p>
+      <p>• Javelin</p>
+      <p>• Fire javelin</p>
+      <p>• Rabbit armor</p>
+    </div>
+    
+    <div class="recipe-item">
+      <h3>Advanced Items</h3>
+      <p>• Elytra recipe</p>
+      <p>• Turtle shell plus</p>
+      <p>• Bounce slab</p>
+      <p>• Cheese variants</p>
+      <p>• Poison remover</p>
+    </div>
+    
+    <div class="recipe-item">
+      <h3>Fungus Items</h3>
+      <p>• Warped fungus concentrate</p>
+      <p>• Blurp concentrate</p>
+      <p>• Blurp spawn egg</p>
+      <p>• Mega Blurp</p>
+    </div>
+    
+    <div class="recipe-item">
+      <h3>Special Recipes</h3>
+      <p>• Coral blocks → Cookies</p>
+      <p>• Kelp block → Charcoal</p>
+      <p>• Echo shard → Amethyst</p>
+      <p>• Enchanted golden apple</p>
+      <p>• Luck potion</p>
+    </div>
+  </div>
 </div>
 
-</VStack>
-<!-- Info -->
-<div style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.5); padding: 20px; color: white; width: 350px; margin-bottom: 20px;">
-  <h1>Stuff</h1>
-  <p>Use disc fragments to craft sugar</p>
-  <p>Convert dead bushes into sticks</p>
-  <p>Turn rotten flesh into dirt</p>
-  <p>Make cheese from milk</p>
-  <p>Get gold from Blurps by feeding them fungus</p>
-  <p>Use the ruined portal locator to find portals</p>
-  <p>Villagers can trade trash for cash</p>
+<br>
+
+<!-- Items Section -->
+<div class="glass-card">
+  <h1>🎒 Items</h1>
+  <div class="recipe-grid">
+    <div>
+      <h3>Food Items</h3>
+      <p>• Fungus loaf</p>
+      <p>• Snow cone (all variants)</p>
+      <p>• Beetroot stew stuff</p>
+      <p>• Kelp stew</p>
+      <p>• Fish stew</p>
+      <p>• Cheese wedge</p>
+    </div>
+    <div>
+      <h3>Equipment</h3>
+      <p>• Turtle shell plus</p>
+      <p>• Rabbit armor</p>
+      <p>• Magma cream armor</p>
+      <p>• Javelin</p>
+      <p>• Fire javelin</p>
+    </div>
+    <div>
+      <h3>Special Items</h3>
+      <p>• Ruined portal locator</p>
+      <p>• Bounce slab</p>
+      <p>• Poison remover</p>
+      <p>• Blurp concentrate</p>
+      <p>• Warped fungus concentrate</p>
+    </div>
+  </div>
 </div>
+
+<br>
+
+<!-- Entities Section -->
+<div class="glass-card">
+  <h1>👾 Entities</h1>
+  <div class="recipe-grid">
+    <div>
+      <h3>Blurp</h3>
+      <p>Give fungus and get gold nuggets</p>
+    </div>
+    <div>
+      <h3>Mega Blurp</h3>
+      <p>Give fungus and get gold ingots</p>
+    </div>
+    <div>
+      <h3>Blurred</h3>
+      <p>A special variant</p>
+    </div>
+    <div>
+      <h3>Superblurped</h3>
+      <p>The ultimate form</p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<!-- Tips Section -->
+<div class="glass-card">
+  <h1>💡 Tips</h1>
+  <p>• Use disc fragments to craft sugar</p>
+  <p>• Convert dead bushes into sticks</p>
+  <p>• Turn rotten flesh into dirt</p>
+  <p>• Make cheese from milk</p>
+  <p>• Get gold from Blurps by feeding them fungus</p>
+  <p>• Use the ruined portal locator to find portals</p>
+  <p>• Villagers can trade trash for cash</p>
+</div>
+
+<br>
 
 <!-- Credits -->
-<div style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.5); padding: 20px; color: white; width: 350px;">
-  <h1>Credits</h1>
-  <p>By Bob Robertson and Devin.ai</p>
-  <hr style="border: 1px solid white;">
-  <p>Mods made with MCreator</p>
+<div class="glass-card">
+  <h1>👨‍💻 Credits</h1>
+  <p>Created by <strong>Bob Robertson</strong> and <strong>Devin.ai</strong></p>
+  <hr style="border: 1px solid rgba(255, 255, 255, 0.2); margin: 15px 0;">
+  <p>Made with MCreator</p>
 </div>
 
 </body>
